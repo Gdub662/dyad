@@ -27,6 +27,7 @@ vi.mock("node:fs", async () => {
       renameSync: vi.fn(),
       unlinkSync: vi.fn(),
       lstatSync: vi.fn().mockReturnValue({ isDirectory: () => false }),
+      readFileSync: vi.fn().mockReturnValue("{}"), // Mock readFileSync
       promises: {
         readFile: vi.fn().mockResolvedValue(""),
       },
@@ -37,6 +38,7 @@ vi.mock("node:fs", async () => {
     renameSync: vi.fn(),
     unlinkSync: vi.fn(),
     lstatSync: vi.fn().mockReturnValue({ isDirectory: () => false }),
+    readFileSync: vi.fn().mockReturnValue("{}"), // Mock readFileSync
     promises: {
       readFile: vi.fn().mockResolvedValue(""),
     },
