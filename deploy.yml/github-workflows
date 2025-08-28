@@ -1,0 +1,16 @@
+Your project needs to be built into simple web files (like HTML, CSS, and JavaScript). Think of these as the finished pieces of your project.
+Put all these finished pieces into a special folder. We'll call this folder docs for now, but you can change it if you need to.
+deploy.yml 
+.github/workflows.
+Step 3: What the "Deploy" Helper Does
+
+When you make changes to your project and "push" them to GitHub (like saving your work online), the "deploy" helper will:
+Check out your code: It grabs a copy of your project.
+(Optional) Build your project: If your project needs to be built first (like compiling code), the helper can do that. We've included some lines in the deploy.yml file that you can "uncomment" (remove the # in front of them) if you need this step.
+Put it on GitHub Pages: It takes your finished project files from the docs folder and puts them online at a special address like https://gdub662.github.io.
+Step 4: Your Project's Homepage
+We'll include a simple index.html file in your docs folder. This is like a "placeholder" homepage.
+Important: You'll replace ththis file with the actual main page of your project!
+Step 5: How Others Can Find It (README.md)
+We'll update a file called README.md in your project. This file is like a quick guide for anyone looking at your project.
+It will tell them that your project is live at https://gdub662.github.io and explain how it all works.
